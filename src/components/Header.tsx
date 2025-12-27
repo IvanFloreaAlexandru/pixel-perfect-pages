@@ -16,33 +16,33 @@ const Header = () => {
 
   return (
     <header className="w-full">
-      {/* 1. Bara de sus - Acum este un portocaliu mai închis pentru contrast */}
-      <div className="bg-orange-600 text-white py-2">
+      {/* 1. Bara de sus - Schimbată în Gri Închis (#1F2937) */}
+      <div className="bg-[#1F2937] text-white py-2">
         <div className="container-custom flex flex-wrap items-center justify-between gap-2 text-sm">
           <div className="flex flex-wrap items-center gap-4 md:gap-6">
             <a
               href="tel:0774579178"
-              className="flex items-center gap-2 hover:text-black transition-colors"
+              className="flex items-center gap-2 hover:text-primary transition-colors"
             >
-              <Phone className="h-4 w-4" />
+              <Phone className="h-4 w-4 text-primary" />
               <span className="font-medium">0774 579 178</span>
             </a>
             <a
               href="mailto:vxxtractari@gmail.com"
-              className="flex items-center gap-2 hover:text-black transition-colors"
+              className="flex items-center gap-2 hover:text-primary transition-colors"
             >
-              <Mail className="h-4 w-4" />
+              <Mail className="h-4 w-4 text-primary" />
               <span className="hidden sm:inline">vxxtractari@gmail.com</span>
             </a>
           </div>
-          <div className="flex items-center gap-2">
-            <MapPin className="h-4 w-4" />
+          <div className="flex items-center gap-2 text-gray-300">
+            <MapPin className="h-4 w-4 text-primary" />
             <span>București, Sector 1</span>
           </div>
         </div>
       </div>
 
-      {/* 2. Navigația Principală - Acum este Portocaliu (Primary) */}
+      {/* 2. Navigația Principală - Rămâne Portocaliu (Primary) */}
       <nav className="bg-primary border-b border-orange-500 py-4 shadow-md">
         <div className="container-custom flex items-center justify-between">
           <Link to="/" className="flex items-center gap-3 group text-white">
@@ -63,7 +63,7 @@ const Header = () => {
             </div>
           </Link>
 
-          {/* Navigația Desktop - Text alb cu hover negru/gri */}
+          {/* Navigația Desktop */}
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
@@ -80,7 +80,7 @@ const Header = () => {
             ))}
           </div>
 
-          {/* Buton Meniu Mobil - Text alb */}
+          {/* Buton Meniu Mobil */}
           <button
             className="md:hidden p-2 text-white"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -94,7 +94,7 @@ const Header = () => {
           </button>
         </div>
 
-        {/* Meniu Mobil - Fundal portocaliu */}
+        {/* Meniu Mobil */}
         {isMenuOpen && (
           <div className="md:hidden bg-primary border-t border-orange-500 animate-slide-up">
             <div className="container-custom py-6 flex flex-col gap-4">
