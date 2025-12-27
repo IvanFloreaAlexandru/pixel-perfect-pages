@@ -22,14 +22,20 @@ const MobileContactBar = ({
     >
       <a
         href={`tel:${phoneNumber}`}
-        className="flex items-center justify-center gap-3 bg-[#F59E0B] text-white py-5 shadow-[0_-4px_12px_rgba(0,0,0,0.2)] active:bg-[#D97706] transition-colors"
+        className="flex items-center justify-center gap-3 bg-[#F59E0B] py-5 shadow-[0_-4px_12px_rgba(0,0,0,0.2)] active:bg-[#D97706] transition-colors"
       >
-        <Phone className="w-6 h-6 animate-pulse" fill="currentColor" />
-        <span className="text-xl font-bold uppercase tracking-wider">
+        {/* Iconița acum este gri închis (#1F2937) */}
+        <Phone
+          className="w-6 h-6 animate-pulse text-[#1F2937]"
+          fill="currentColor"
+        />
+
+        {/* Textul acum este gri închis (#1F2937) */}
+        <span className="text-xl font-bold uppercase tracking-wider text-[#1F2937]">
           Sună acum
         </span>
       </a>
-      {/* Padding pentru iPhone-uri cu bară de navigare jos */}
+      {/* Fundalul pentru Safe Area rămâne portocaliu pentru continuitate vizuală */}
       <div className="bg-[#F59E0B] h-[env(safe-area-inset-bottom)]"></div>
     </div>
   );

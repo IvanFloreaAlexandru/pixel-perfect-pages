@@ -29,32 +29,40 @@ const Hero = () => {
               ta și a autovehiculului tău.
             </p>
 
-            <div className="flex flex-wrap gap-4">
-              {/* Buton Primar - Gri Închis (#1F2937) */}
-              <Button
-                variant="hero"
-                size="xl"
-                asChild
-                className="bg-[#1F2937] text-white hover:bg-[#1F2937]/90 shadow-button transition-all duration-300"
-              >
-                <a href="tel:0774579178">
-                  <Phone className="h-5 w-5 mr-2" />
-                  Contactează-ne{" "}
-                </a>
-              </Button>
+            <div className="relative">
+              <div className="flex flex-wrap gap-4 mb-6">
+                {/* Buton Primar - Contactează-ne */}
+                <Button
+                  variant="hero"
+                  size="xl"
+                  asChild
+                  className="bg-[#1F2937] text-white hover:bg-[#1F2937]/90 shadow-button transition-all duration-300"
+                >
+                  <a href="tel:0774579178">
+                    <Phone className="h-5 w-5 mr-2" />
+                    Contactează-ne
+                  </a>
+                </Button>
 
-              {/* Buton Secundar - Outline Gri Închis */}
-              <Button
-                variant="hero-outline"
-                size="xl"
-                asChild
-                className="border-2 border-[#1F2937]/20 text-[#1F2937] hover:bg-[#1F2937]/5 transition-all duration-300"
-              >
-                <Link to="/servicii">
-                  Vezi serviciile
-                  <ArrowRight className="h-5 w-5 ml-2" />
-                </Link>
-              </Button>
+                {/* Buton Secundar - Acum identic cu primul */}
+                <Button
+                  variant="hero"
+                  size="xl"
+                  asChild
+                  className="bg-[#1F2937] text-white hover:bg-[#1F2937]/90 shadow-button transition-all duration-300"
+                >
+                  <Link to="/servicii">
+                    <ArrowRight className="h-5 w-5 mr-2" />
+                    Vezi serviciile
+                  </Link>
+                </Button>
+              </div>
+
+              {/* Liniile decorative de sub butoane */}
+              <div className="flex items-center gap-2">
+                <div className="w-12 h-0.5 bg-primary"></div>
+                <div className="w-4 h-0.5 bg-primary/40"></div>
+              </div>
             </div>
           </div>
 
@@ -70,7 +78,7 @@ const Hero = () => {
                 className="max-w-full h-auto object-contain rounded-xl"
               />
 
-              {/* Badge Experiență - Mai mic și în colț pe mobil */}
+              {/* Badge Experiență */}
               <div className="absolute bottom-2 right-2 md:bottom-6 md:right-6 bg-primary text-primary-foreground px-2 py-1.5 md:px-4 md:py-3 rounded-lg shadow-lg">
                 <div className="flex items-center gap-1.5 md:gap-3">
                   <div className="bg-primary-foreground/20 p-1 md:p-2 rounded-full">
