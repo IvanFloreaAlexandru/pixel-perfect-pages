@@ -11,7 +11,7 @@ const Footer = () => {
     facebook: "https://www.facebook.com/share/1ZthmhiiAY/?mibextid=wwXIfr",
     instagram:
       "https://www.instagram.com/vxx_tractari?igsh=MXhjbmRudTR3dnd3Mg%3D%3D&utm_source=qr",
-    tiktok: "https://www.tiktok.com/@vxx_tractari?_r=1&_t=ZN-92ZonXIjXFO",
+    tiktok: "https://www.tiktok.com/@vxx_tractari?_r=1&_t=ZN-92ZonXIjXFO  ",
   };
 
   return (
