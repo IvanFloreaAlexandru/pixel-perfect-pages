@@ -55,7 +55,7 @@ const Hero = () => {
             </div>
           </div>
 
-          {/* Coloana Imagine - REPARATĂ PENTRU A NU TĂIA POZA */}
+          {/* Coloana Imagine */}
           <div
             className="relative animate-fade-in flex justify-center lg:justify-end"
             style={{ animationDelay: "0.2s" }}
@@ -64,18 +64,15 @@ const Hero = () => {
               <img
                 src={heroImage}
                 alt="Asistenta Rutiera VXX Tractări Auto"
-                /* Am schimbat object-cover în object-contain pentru a preveni tăierea.
-                   Am scos aspect-[4/3] fix pentru a lăsa poza să își păstreze proporțiile naturale.
-                */
                 className="max-w-full h-auto object-contain rounded-xl"
               />
 
-              {/* Badge Experiență */}
-              <div className="absolute bottom-6 right-6 bg-primary text-primary-foreground px-4 py-3 rounded-lg shadow-lg">
-                <div className="flex items-center gap-3">
-                  <div className="bg-primary-foreground/20 p-2 rounded-full">
+              {/* Badge Experiență - Optimizat pentru mobil */}
+              <div className="absolute bottom-2 right-2 md:bottom-6 md:right-6 bg-primary text-primary-foreground px-2 py-1.5 md:px-4 md:py-3 rounded-lg shadow-lg">
+                <div className="flex items-center gap-1.5 md:gap-3">
+                  <div className="bg-primary-foreground/20 p-1 md:p-2 rounded-full">
                     <svg
-                      className="h-5 w-5"
+                      className="h-3.5 w-3.5 md:h-5 md:w-5"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
@@ -87,10 +84,12 @@ const Hero = () => {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-[10px] uppercase tracking-wider opacity-90 leading-none mb-1">
+                    <p className="text-[8px] md:text-[10px] uppercase tracking-wider opacity-90 leading-none mb-0.5 md:mb-1">
                       Experiență
                     </p>
-                    <p className="font-bold text-lg leading-none">10+ Ani</p>
+                    <p className="font-bold text-sm md:text-lg leading-none">
+                      10+ Ani
+                    </p>
                   </div>
                 </div>
               </div>

@@ -1,10 +1,18 @@
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 // Importă imaginea logo-ului
 import logoImage from "@/assets/iconHeader.jpg";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  // Social Media Links - Modifică URL-urile cu link-urile tale reale
+  const socialLinks = {
+    facebook: "https://www.facebook.com/share/1ZthmhiiAY/?mibextid=wwXIfr",
+    instagram:
+      "https://www.instagram.com/vxx_tractari?igsh=MXhjbmRudTR3dnd3Mg%3D%3D&utm_source=qr",
+    tiktok: "https://www.tiktok.com/@vxx_tractari?_r=1&_t=ZN-92ZonXIjXFO",
+  };
 
   return (
     <footer className="bg-foreground text-background">
@@ -13,7 +21,6 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              {/* Container Logo - stilizat similar cu cel din Header */}
               <div className="bg-white p-1 rounded-lg overflow-hidden border border-white/20">
                 <img
                   src={logoImage}
@@ -30,11 +37,49 @@ const Footer = () => {
                 </p>
               </div>
             </div>
-            <p className="text-background/70 text-sm leading-relaxed max-w-xs">
+            <p className="text-background/70 text-sm leading-relaxed max-w-xs mb-6">
               Servicii profesionale de tractări auto și asistență rutieră
               disponibile 24/7. Ne deplasăm rapid pentru a-ți oferi siguranță și
               eficiență.
             </p>
+
+            {/* SOCIAL MEDIA SECTION */}
+            <div className="flex gap-4">
+              <a
+                href={socialLinks.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 p-2.5 rounded-full hover:bg-primary hover:text-primary-foreground transition-all"
+                aria-label="Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href={socialLinks.instagram}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 p-2.5 rounded-full hover:bg-primary hover:text-primary-foreground transition-all"
+                aria-label="Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href={socialLinks.tiktok}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 p-2.5 rounded-full hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
+                aria-label="TikTok"
+              >
+                {/* SVG personalizat pentru TikTok (nu există în Lucide de bază) */}
+                <svg
+                  viewBox="0 0 24 24"
+                  className="h-5 w-5 fill-current"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.17-2.89-.6-4.13-1.46-.1-.07-.19-.15-.29-.22-.01 3.29-.01 6.59-.02 9.88-.08 1.95-.94 3.82-2.51 4.98-1.74 1.34-4.12 1.72-6.19 1.12-2.22-.65-4.05-2.49-4.71-4.7-.72-2.39-.19-5.11 1.48-7 1.25-1.45 3.12-2.32 5.01-2.45v4.18c-1.12.11-2.23.63-2.9 1.54-.75 1.02-.85 2.41-.33 3.5.47 1.05 1.55 1.79 2.7 1.9 1.24.16 2.58-.33 3.28-1.37.5-.73.61-1.63.6-2.5.01-4.13.01-8.25.02-12.38z" />
+                </svg>
+              </a>
+            </div>
           </div>
 
           {/* Quick Links */}
