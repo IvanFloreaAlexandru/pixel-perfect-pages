@@ -10,11 +10,13 @@ const Hero = () => {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Coloana Text */}
           <div className="animate-slide-up">
+            {/* Secțiune titlu mic cu două bare gri egale */}
             <div className="flex items-center gap-2 mb-6">
-              <div className="w-8 h-0.5 bg-primary"></div>
+              <div className="w-8 h-0.5 bg-[#1F2937]"></div>
               <span className="text-primary font-semibold text-sm uppercase tracking-wide">
                 Despre noi
               </span>
+              <div className="w-8 h-0.5 bg-[#1F2937]"></div>
             </div>
 
             <h1 className="heading-primary mb-6 text-[#1F2937]">
@@ -29,40 +31,32 @@ const Hero = () => {
               ta și a autovehiculului tău.
             </p>
 
-            <div className="relative">
-              <div className="flex flex-wrap gap-4 mb-6">
-                {/* Buton Primar - Contactează-ne */}
-                <Button
-                  variant="hero"
-                  size="xl"
-                  asChild
-                  className="bg-[#1F2937] text-white hover:bg-[#1F2937]/90 shadow-button transition-all duration-300"
-                >
-                  <a href="tel:0774579178">
-                    <Phone className="h-5 w-5 mr-2" />
-                    Contactează-ne
-                  </a>
-                </Button>
+            <div className="flex flex-wrap gap-4">
+              {/* Buton Primar - Contactează-ne */}
+              <Button
+                variant="hero"
+                size="xl"
+                asChild
+                className="bg-[#1F2937] text-white hover:bg-[#1F2937]/90 shadow-button transition-all duration-300"
+              >
+                <a href="tel:0774579178">
+                  <Phone className="h-5 w-5 mr-2" />
+                  Contactează-ne
+                </a>
+              </Button>
 
-                {/* Buton Secundar - Acum identic cu primul */}
-                <Button
-                  variant="hero"
-                  size="xl"
-                  asChild
-                  className="bg-[#1F2937] text-white hover:bg-[#1F2937]/90 shadow-button transition-all duration-300"
-                >
-                  <Link to="/servicii">
-                    <ArrowRight className="h-5 w-5 mr-2" />
-                    Vezi serviciile
-                  </Link>
-                </Button>
-              </div>
-
-              {/* Liniile decorative de sub butoane */}
-              <div className="flex items-center gap-2">
-                <div className="w-12 h-0.5 bg-primary"></div>
-                <div className="w-4 h-0.5 bg-primary/40"></div>
-              </div>
+              {/* Buton Secundar - Vezi serviciile */}
+              <Button
+                variant="hero"
+                size="xl"
+                asChild
+                className="bg-[#1F2937] text-white hover:bg-[#1F2937]/90 shadow-button transition-all duration-300"
+              >
+                <Link to="/servicii">
+                  Vezi serviciile
+                  <ArrowRight className="h-5 w-5 ml-2" />
+                </Link>
+              </Button>
             </div>
           </div>
 
