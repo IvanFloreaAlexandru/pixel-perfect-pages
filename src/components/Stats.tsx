@@ -8,7 +8,7 @@ const stats = [
   },
   {
     icon: Clock,
-    value: "30 min",
+    value: "20 min",
     label: "TIMP DE RĂSPUNS",
   },
   {
