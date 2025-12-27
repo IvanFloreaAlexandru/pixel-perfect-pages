@@ -13,7 +13,8 @@ const Index = () => {
     <>
       <SEO
         title="Tractări Auto București 24/7 | VXX Tractări - Asistență Rutieră Non-Stop"
-        description="Servicii profesionale de tractări auto și asistență rutieră disponibile 24/7 în București și împrejurimi. Intervenție rapidă în 30 minute. Sună acum: 0774 579 178"
+        description="Tractări Auto București și Ilfov 24/7 | VXX Tractări 
+Tractări începând de la 150 lei, asistență rutieră NON-STOP în București și Ilfov. Sună: 0774 579 178"
         canonical="/"
       />
       <LocalBusinessSchema />
