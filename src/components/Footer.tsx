@@ -6,7 +6,7 @@ import logoImage from "@/assets/iconHeader.jpg";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
-  // Social Media Links - Modifică URL-urile cu link-urile tale reale
+  // Social Media Links
   const socialLinks = {
     facebook: "https://www.facebook.com/share/1ZthmhiiAY/?mibextid=wwXIfr",
     instagram:
@@ -21,7 +21,8 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-3 mb-6">
-              <div className="bg-white p-1 rounded-lg overflow-hidden border border-white/20">
+              {/* Fundalul pozei schimbat în Gri Închis (#1F2937) */}
+              <div className="bg-[#1F2937] p-1 rounded-lg overflow-hidden border border-white/10">
                 <img
                   src={logoImage}
                   alt="VXX Tractări Logo"
@@ -29,10 +30,11 @@ const Footer = () => {
                 />
               </div>
               <div>
-                <span className="font-bold text-xl block leading-none">
+                {/* Textul VXX TRACTĂRI schimbat în Portocaliu (primary) */}
+                <span className="font-bold text-xl block leading-none text-primary">
                   VXX TRACTĂRI
                 </span>
-                <p className="text-[10px] font-semibold text-primary uppercase tracking-wider mt-1">
+                <p className="text-[10px] font-semibold text-primary/80 uppercase tracking-wider mt-1">
                   ASISTENȚĂ RUTIERĂ
                 </p>
               </div>
@@ -70,7 +72,6 @@ const Footer = () => {
                 className="bg-white/10 p-2.5 rounded-full hover:bg-primary hover:text-primary-foreground transition-all flex items-center justify-center"
                 aria-label="TikTok"
               >
-                {/* SVG personalizat pentru TikTok (nu există în Lucide de bază) */}
                 <svg
                   viewBox="0 0 24 24"
                   className="h-5 w-5 fill-current"

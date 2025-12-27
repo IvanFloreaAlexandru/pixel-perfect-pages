@@ -20,15 +20,14 @@ const Hero = () => {
             </div>
 
             <h1 className="heading-primary mb-6 text-[#1F2937]">
-              Tractări auto rapide și profesionale – Disponibili 24/7
+              Tractăm fără griji, oricând ai nevoie!{" "}
             </h1>
 
             <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-              Suntem partenerul tău de încredere în situații neprevăzute. Cu o
-              experiență vastă în domeniul tractărilor auto și asistenței
-              rutiere, echipa noastră este pregătită să intervină prompt,
-              indiferent de oră sau locație. Prioritatea noastră este siguranța
-              ta și a autovehiculului tău.
+              La VXX Tractări – Asistență Rutieră, suntem alături de tine atunci
+              când apar situații neprevăzute în trafic. Oferim servicii rapide
+              și sigure de tractări auto în București și Ilfov, disponibile
+              24/7, indiferent de oră sau locație.
             </p>
 
             <div className="flex flex-wrap gap-4">

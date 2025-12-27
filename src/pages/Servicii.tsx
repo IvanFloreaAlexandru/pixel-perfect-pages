@@ -77,7 +77,7 @@ const secondaryServices = [
 ];
 
 const stats = [
-  { icon: Clock, label: "Timp Răspuns", value: "30 Min" },
+  { icon: Clock, label: "Timp Răspuns", value: "20 Min" },
   { icon: Shield, label: "Asigurare", value: "Completă" },
   { icon: UserCheck, label: "Personal", value: "Calificat" },
   { icon: Zap, label: "Disponibil", value: "24/7" },
